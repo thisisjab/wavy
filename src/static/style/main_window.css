@@ -10,7 +10,7 @@ https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a
 #left_sidebar_button {
     background-color: #F8F9FA;
     border: 0;
-    border-radius: 1000;
+    border-radius: 50%;
     width: 38px;
     height: 38px;
 }
@@ -18,7 +18,7 @@ https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a
 #left_sidebar_button:hover {
     background-color: #DEE2E6;
     border: 0;
-    border-radius: 1000;
+    border-radius: 50%;
     width: 38px;
     height: 38px;
 }
@@ -27,5 +27,61 @@ https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a
     background: #E9ECEF;
 }
 
-#right_sidebar {
-background-color:blue}
+#splitter_main_pane {
+    background-color: red;
+}
+
+#splitter_music_pane {
+    background-color: #F8F9FA;
+}
+
+#music_pane_music_thumbnail_label {
+    border-radius: 10px;
+}
+
+#music_pane_music_title {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 900;
+    margin: 10px 0 0;
+    color: #343a40;
+}
+
+#music_pane_music_artist {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px 0;
+    color: #343a40;
+}
+
+#music_pane_music_scroller
+{
+background : dee2e6;
+}
+#music_pane_music_scroller::handle
+{
+width: 5px;
+height: 5px;
+background : red;
+}
+#music_pane_music_scroller::handle::pressed
+{
+background : red;
+}
+
+#music_pane_music_scroller::right-arrow:horizontal, #music_pane_music_scroller::left-arrow:horizontal
+{
+      border: none;
+      background: none;
+      color: none;
+}
+#music_pane_music_scroller::add-line:horizontal {
+      border: none;
+      background: none;
+}
+
+#music_pane_music_scroller::sub-line:horizontal {
+      border: none;
+      background: none;
+}
