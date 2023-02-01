@@ -184,4 +184,56 @@ class _SplitterMusicPane(QWidget):
         self.music_scrollbar.setObjectName("music_pane_music_scroller")
         self.widget_layout.addWidget(self.music_scrollbar)
 
+        self.widget_layout.addWidget(_SplitterMusicPaneButtons())
+
         self.widget_layout.addStretch()
+
+
+class _SplitterMusicPaneButtons(QWidget):
+
+    def __init__(self) -> None:
+        super(_SplitterMusicPaneButtons, self).__init__()
+
+        self.__configure__()
+        self.__add_widgets()
+
+    def __configure__(self) -> None:
+        self.setAttribute(Qt.WidgetAttribute.WA_StyledBackground, True)
+        self.setAutoFillBackground(True)
+        self.setObjectName("splitter_music_pane_buttons")
+        self.widget_layout = QHBoxLayout()
+        self.widget_layout.setContentsMargins(0, 0, 0, 0)
+        self.widget_layout.setSpacing(0)
+        self.widget_layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.setLayout(self.widget_layout)
+
+    def __add_widgets(self) -> None:
+        self.shuffle_button = QPushButton()
+        self.shuffle_button.setIcon(QIcon("static/image/icons/shuffle.svg"))
+        self.shuffle_button.setObjectName("splitter_music_pane_button")
+        self.widget_layout.addWidget(self.shuffle_button)
+
+        self.skip_previous_button = QPushButton()
+        self.skip_previous_button.setIcon(QIcon("static/image/icons/skip_previous.svg"))
+        self.skip_previous_button.setObjectName("splitter_music_pane_button")
+        self.widget_layout.addWidget(self.skip_previous_button)
+
+        self.play_pause_button = QPushButton()
+        self.play_pause_button.setIcon(QIcon("static/image/icons/play.svg"))
+        self.play_pause_button.setObjectName("splitter_music_pane_button")
+        self.widget_layout.addWidget(self.play_pause_button)
+
+        self.stop_button = QPushButton()
+        self.stop_button.setIcon(QIcon("static/image/icons/stop.svg"))
+        self.stop_button.setObjectName("splitter_music_pane_button")
+        self.widget_layout.addWidget(self.stop_button)
+
+        self.skip_next_button = QPushButton()
+        self.skip_next_button.setIcon(QIcon("static/image/icons/skip_next.svg"))
+        self.skip_next_button.setObjectName("splitter_music_pane_button")
+        self.widget_layout.addWidget(self.skip_next_button)
+
+        self.repeat_button = QPushButton()
+        self.repeat_button.setIcon(QIcon("static/image/icons/repeat.svg"))
+        self.repeat_button.setObjectName("splitter_music_pane_button")
+        self.widget_layout.addWidget(self.repeat_button)

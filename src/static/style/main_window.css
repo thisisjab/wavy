@@ -85,3 +85,21 @@ background : red;
       border: none;
       background: none;
 }
+
+#splitter_music_pane_button {
+    margin: 10px 0 0;
+    background-color: #F8F9FA;
+    border: 0;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+}
+
+#splitter_music_pane_button:hover {
+    margin: 10px 0 0;
+    background-color: #DEE2E6;
+    border: 0;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+}
